@@ -1,3 +1,4 @@
+require('dotenv').config();
 const {ApolloServer} = require('apollo-server');
 const isEmail = require('isemail');
 
@@ -25,7 +26,10 @@ const server = new ApolloServer({
     dataSources: () => ({
         launchAPI: new LaunchAPI(),
         userAPI: new UserAPI({store})
-    })
+    }),
+    engine: {    
+        reportSchema: true
+    }
 });
 
 server.listen().then(({url}) => {

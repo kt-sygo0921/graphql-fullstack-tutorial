@@ -17,7 +17,7 @@ const typeDefs = gql`
 
     type User {
         id: ID!
-        emamil: String!
+        email: String!
         trips: [Launch]
     }
 
