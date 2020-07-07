@@ -30,7 +30,7 @@ export interface GetMyTrips_me {
   __typename: "User";
   id: string;
   email: string;
-  trips: (GetMyTrips_me_trips | null)[];
+  trips: (GetMyTrips_me_trips | null)[] | null;
 }
 
 export interface GetMyTrips {

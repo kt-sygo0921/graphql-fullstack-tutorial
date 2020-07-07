@@ -3,9 +3,9 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL query operation: GetCartItems
+// GraphQL query operation: IsUserLoggedIn
 // ====================================================
 
-export interface GetCartItems {
-  cartItems: (string | null)[];
+export interface IsUserLoggedIn {
+  isLoggedIn: boolean;
 }

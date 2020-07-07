@@ -14,7 +14,7 @@ export interface BookTrips_bookTrips_launches {
 
 export interface BookTrips_bookTrips {
   __typename: "TripUpdateResponse";
-  success: boolean;
+  success: boolean | null;
   message: string | null;
   launches: (BookTrips_bookTrips_launches | null)[] | null;
 }
@@ -24,5 +24,5 @@ export interface BookTrips {
 }
 
 export interface BookTripsVariables {
-  launchIds: (string | null)[];
+  launchids: (string | null)[];
 }

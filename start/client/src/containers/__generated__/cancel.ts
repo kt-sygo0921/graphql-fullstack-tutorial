@@ -14,7 +14,7 @@ export interface cancel_cancelTrip_launches {
 
 export interface cancel_cancelTrip {
   __typename: "TripUpdateResponse";
-  success: boolean;
+  success: boolean | null;
   message: string | null;
   launches: (cancel_cancelTrip_launches | null)[] | null;
 }
